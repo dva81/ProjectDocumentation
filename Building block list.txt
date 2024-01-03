@@ -1,0 +1,28 @@
+B02 Mandate 
+B03 Project Background 
+B04 Scope 
+B05 Risk Analysis 
+B06 Cost Benefit Analysis 
+B07 Project Approach 
+B08 Value Chain 
+B09 Product Breakdown 
+B10 Product Breakdown Work Package 
+B11 Product Description 
+B12 Resources 
+B13 Planning 
+B14 Risks 
+B15 Organization 
+B16 Budget Details 
+B17 Acceptance Criteria 
+B18 Architectural and Security Aspects 
+B19 Business Process Aspects 
+B20 Communication Plan 
+B21 Quality Plan 
+B22 Highlights Report 
+B23 Decisions to be taken 
+B24 Recapitulation 
+B25 Follow-on Actions Recommendations 
+B26 Lessons Learned 
+B30 Issue Register 
+B31 Risk register 
+B32 Lessons Learned Register 
