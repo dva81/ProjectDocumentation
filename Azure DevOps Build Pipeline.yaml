@@ -1,0 +1,18 @@
+pool:
+  name: Azure Pipelines
+steps:
+- task: richardfennellBM.BM-VSTS-WikiPDFExport-Tasks.WikiPDFExportTask.WikiPdfExportTask@3
+  displayName: 'WIKI PDF Exporter'
+  inputs:
+    cloneRepo: true
+    repo: 'xx'
+    useAgentToken: true
+    localpath: '$(System.DefaultWorkingDirectory)\Project Documentation'
+    outputFile: '$(Build.ArtifactStagingDirectory)\Project Documentation.pdf'
+    ExtraParameters: '--css "$(System.DefaultWorkingDirectory)\Project Documentation\Assets\Style.css" --footer-template-path "$(System.DefaultWorkingDirectory)\Project Documentation\Assets\footer.html" -b'
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact: Project Documentation'
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)\Project Documentation.pdf'
+    ArtifactName: 'Project Documentation'
